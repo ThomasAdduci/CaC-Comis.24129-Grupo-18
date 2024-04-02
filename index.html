@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav class="barra-navegacion">
+        <div class="logo-container">
+          <img class="logo-icon" src="../../img/logo-2.png" alt="logo-navbar" />
+        </div>
+        <ul class="list-nav">
+          <li class="btn-nav">
+            <a class="scroll-link" href="#home">Home</a>
+          </li>
+          <li class="btn-nav">
+            <a class="scroll-link" href="#about">About</a>
+          </li>
+          <li class="btn-nav">
+            <a class="scroll-link" href="#service">Services</a>
+          </li>
+          <li class="btn-nav">
+            <a class="scroll-link" href="#reviews">Reseñas</a>
+          </li>
+          <li class="btn-nav">
+            <a class="scroll-link" href="#contact">Contactos</a>
+          </li>
+          <li>
+            <a id="loginIcon" class="icon" href="./views/login.ejs">
+              <i class="fas fa-sign-in-alt fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section id="home" class="home">
+      <div class="capa"></div>
+      <div class="container">
+        <div class="imagen-logo">
+          <img src="/img/logo-barra.png" alt="Logo" />
+        </div>
+        <div class="title-container">
+          <h1 class="title">Mecanica Integral TorinoCar</h1>
+          <h3 class="slogan">
+            Estamos para brindarle la mayor confianza, y seguridad a la hora de
+            manejar.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="divisor"></div>
+      <div class="about">
+        <h1 id="titulo" class="about-title">Equipo de Desarrollo</h1>
+        <p id="subtitulo" class="about-subtitle">
+          Conoce a nuestro equipo de desarrolladores.
+        </p>
+        <div class="card-container">
+          <div class="card card-1" data-cambios-realizados="false">
+            <img src="./img/compa0.jpg" alt="Placeholder Image" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <span>Franco Luca Parera</span>
+                <br />Lider de proyecto, <br />Desarrollador Web, <br />
+                Frontend Dev.
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-2" data-cambios-realizados="false">
+            <img class="img2" src="./img/compa2.jpg" alt="Placeholder Image" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <span>Gisela Emilce Serapio</span>
+                <br />Desarrolladora Creativa, <br />..., <br />
+                ....
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-3" data-cambios-realizados="false">
+            <img class="img3" src="./img/compa3.jpeg" alt="Placeholder Image" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <span>Noelia Deborah Lopez</span>
+                <br />Mediadora, <br />...., <br />
+                ....
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-4" data-cambios-realizados="false">
+            <img class="img4" src="./img/compa1.jpg" alt="Placeholder Image" />
+            <div class="overlay">
+              <div class="overlay-text">
+                <span>Thomas Ezequiel Adduci</span>
+                <br />Impulsor del proyecto, <br />..., <br />....
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mecanicos">
+          <button id="toggleButton" class="btn-mecanicos" onclick="cambiarContenido()">Mecanicos</button>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="service">   
+     <div class="capa-service"></div>
+      <div class="container-service">
+   
+        <div class="title-service">
+          <h1>Nuestros Servicios</h1>
+          <div class="subtitle-service">
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates nobis rerum!</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </body>
+  <script src="./js/script.js"></script>
+</html>

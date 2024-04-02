@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  border-radius: 0 0 8px 8px; 
+}
+.navbar nav {
+  background: linear-gradient(to right, #2a2252, #2a254b);
+  border-radius: 0 0 10px 10px;
+  height: 10vh; /* Cambiamos a una altura relativa */
+  animation: moveGradient 1s linear infinite;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%; 
+  }
+  100% {
+    background-position: 100% 50%; 
+  }
+}
+
+.logo-icon {
+  width: 5%; 
+  margin-left: 2vw; 
+  display:block;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2vw;
+  margin-top: -3.5%;
+}
+
+.navbar li {
+  margin-right: 2vw; 
+}
+
+.navbar .btn-nav a {
+  display: block;
+  padding: 1vh 2vw; 
+  color: #fff;
+  cursor: pointer;
+  background-color: #443f7491;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar .btn-nav a:hover {
+  color: #ffffff;
+  background-color: #303247b2;
+}
+
+.navbar .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw; 
+  height: 4vw; 
+  background-color: #4A5568;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.icon {
+  color: #ffffff !important;
+  width: 2.5vw; 
+  height: 2.5vw; /* Utilizamos una altura relativa */
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.icon i:hover{
+  color: orangered;
+}
+
+/*QUERYS*/
+/*FIN NAVBAR*/
+
+/*HOME*/
+#home{
+  background-image: url(/img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.container {
+  max-width: 90vw; 
+  margin: 0 auto;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.imagen-logo {
+  width: 30vw; 
+  height: auto;
+  margin: 10vh auto 1vh;
+  
+}
+.imagen-logo img{
+  margin-top: -40px;
+}
+.title-container {
+  text-align: center;
+}
+.title {
+  font-size: 4vw; 
+  color: #ffffff;
+  margin-bottom: 1vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.slogan {
+  font-size: 1.3vw; 
+  color: #ffffff98;
+  margin-bottom: 2vw; 
+  font-family: "Roboto", sans-serif;
+
+}
+.btn {
+  padding: 1vw 8vw; 
+  background-color: #363075;
+  color: #fff;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 2vw; 
+  margin-top: 2vw; 
+}
+.btn:hover {
+  background-color: #121631af;
+}
+
+/*FIN HOME*/
+
+/*About*/
+#about{
+  position: relative;
+  background-color: #1a1818;
+  height: auto;
+}
+
+
+#about::before,
+#about::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: radial-gradient(circle, rgba(0, 0, 255, 0.199), transparent); 
+  border-radius: 50%; 
+  animation: move-circles 10s infinite;
+}
+
+@keyframes move-circles {
+  0% {
+    top: 20px;
+    left: 20px;
+  }
+  50% {
+    top: calc(80vh - 320px); 
+    left: calc(100vw - 320px); 
+  }
+  100% {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+#about::before {
+  top: 20px;
+  left: 20px;
+}
+
+#about::after {
+  bottom: 20px;
+  right: 20px;
+}
+
+
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  z-index: 10;
+
+}
+
+.divisor{
+  background-color: #1a1818;
+  height: 5vh;
+}
+
+.about-title{
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+.about-subtitle{
+  font-size: 25px;
+  max-width: 70%; 
+  margin: 20px auto;
+  font-family: "Roboto", sans-serif;
+  color: #ffffffa9;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  z-index: 10;
+  width: 200px;
+  height: 300px; 
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  filter: blur(5px);
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  transition: 1s;
+}
+
+.overlay-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+.overlay-text span{
+  color: orangered;
+  font-size: 20px;
+}
+
+.mecanicos{
+  margin-top: 10px;
+}
+.mecanicos .btn-mecanicos{
+  background-color: #ff7300c4;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #f1f1f1;
+  font-size: 20px;
+  transition: background-color 0.5s ease;
+}
+.mecanicos .btn-mecanicos:hover {
+  background-color: #211ef070;
+}
+
+.mecanicos .btn-mecanicos:active {
+  background-color: #ff711fb7;
+}
+
+/*Servicios*/
+
+#service{
+background-image: url(../img/fondo-service.jpg);
+width: 100%;
+height: auto;
+background-size: cover;
+background-position: center;
+position: relative;
+}

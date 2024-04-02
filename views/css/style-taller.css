@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #353333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b6b6b6;
+  padding: 10px 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+#date-time {
+  margin-right: 10px;
+}
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 50%; /* Ocupa la mitad del ancho de la pantalla */
+  height: auto; /* Ocupa toda la altura de la pantalla */
+  background-color: #353333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  padding: 20px;
+}
+
+.sidebar img {
+  width: 80%; /* Ajusta el ancho de la imagen */
+  margin: auto; /* Centra la imagen horizontalmente */
+}
+
+.buttons-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 4fr); 
+  margin-left: 4rem;
+  gap: 50px; /* Espacio entre los botones */
+  padding: 40px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2);
+  gap: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ff7423;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.ico{
+  font-size: 3rem;
+}
+
+
+#logoutIcon {
+  color: red;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#logoutIcon:hover {
+  color: darkred;
+}
+
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Cambia la dirección de la columna para apilar los elementos */
+  }
+
+  .header-left,
+  .header-right {
+      width: 100%;
+      text-align: center; /* Centra los elementos en dispositivos móviles */
+  }
+
+  .sidebar,
+  .content {
+      width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+  }
+
+  .buttons-container {
+      margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+  }
+}

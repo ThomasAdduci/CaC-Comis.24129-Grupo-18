@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div class="login-container">
+        <a href="../../index.html" class="back-to-login">
+            <i class="fas fa-arrow-left"></i> Volver a Pagina Oficial
+        </a>
+        <div class="logo-container">
+            <img src="../../img/logo-2.png" alt="TorinoCar Logo">
+            <h2>Inicio Sesion</h2>
+        </div>
+        <h2></h2>
+        <form id="loginForm">
+            <div class="form-groupLogin">
+                <label for="username">Username:</label>
+                <input class="campo" type="text" id="username" name="username" required>
+            </div>
+            <div class="form-groupLogin">
+                <label for="password">Password:</label>
+                <input class="campo" type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+
+            <h4>¿Aún no tiene una cuenta? <a href="./register.html" class="register">Registrate</a></h4>
+        </form>
+    </div>
+    <script src="./js/Login.js"></script>
+</body>
+</html>
