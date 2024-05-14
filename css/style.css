@@ -86,7 +86,7 @@ body {
 }
 
 .icon i:hover{
-  color: #f60404;
+  color: #B90E0EFF;
 }
 
 /*QUERYS*/
@@ -208,7 +208,7 @@ body {
   height: 5vh;
 }
 
-.about-title{
+.seccion-title{
   font-size: 60px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -216,7 +216,7 @@ body {
   text-decoration: underline;
 }
 
-.about-p{
+.seccion-p{
   font-size: 20px;
   max-width: 70%;
   margin: 20px auto;
@@ -287,7 +287,7 @@ body {
 }
 
 .overlay-text span{
-  color: #f60404;
+  color: #B90E0EFF;
   font-size: 20px;
 }
 
@@ -295,7 +295,7 @@ body {
   margin-top: 10px;
 }
 .mecanicos .btn-mecanicos{
-  background-color: #f60404;
+  background-color: #B90E0EFF;
   padding: 10px 20px;
   border-radius: 50px;
   color: #f1f1f1;
@@ -307,16 +307,48 @@ body {
 }
 
 .mecanicos .btn-mecanicos:active {
-  background-color: #f60404;
+  background-color: #B90E0EFF;
 }
 
 /*Servicios*/
 
 #service{
-background-image: url(../img/fondo-service.jpg);
+  background-color: #444448;
 width: 100%;
 height: auto;
 background-size: cover;
 background-position: center;
 position: relative;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(2);
+  gap: 10px;
+}
+/*.buttons-container {*/
+/*  margin-left: 0; !* Elimina el margen izquierdo en dispositivos móviles *!*/
+/*}*/
+.buttons-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  align-content: center;
+  margin-left: 0;
+  gap: 50px; /* Espacio entre los botones */
+  padding: 40px;
+}
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #b90e0e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00000019;
 }
