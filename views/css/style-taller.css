@@ -27,9 +27,9 @@ header {
 #date-time {
   margin-right: 10px;
 }
-.container {
-  display: flex;
-}
+/*.container {*/
+/*  display: flex;*/
+/*}*/
 
 .sidebar {
   width: 50%; /* Ocupa la mitad del ancho de la pantalla */
