@@ -224,14 +224,15 @@ body {
   color: #f0f0f0;
   text-decoration: underline;
 }
-.about-subtitle{
-  font-size: 25px;
-  max-width: 70%; 
+
+.about-p{
+  font-size: 20px;
+  max-width: 70%;
   margin: 20px auto;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   color: #ffffffa9;
 }
-
 .card-container {
   display: flex;
   flex-wrap: wrap; 
