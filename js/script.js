@@ -132,4 +132,13 @@ const datosOriginales = [
       window.location.href = "../views/login.html"; // Reemplaza "tu_pagina_destino.html" con la URL de la página a la que deseas redirigir
     });
   });
+
+  // Slide bar con las marcas de autos
+  const imagesContainer = document.querySelector('.images-container');
+
+  const images = imagesContainer.querySelectorAll('.images-car-brands-sizes');
+  images.forEach(img => {
+    const clone = img.cloneNode(true);
+    imagesContainer.appendChild(clone);
+  });
   
