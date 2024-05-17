@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="icon" type="image/jpg" href="./img/brand-logos/favicon.png"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous" />
+    <!--aqui dejo el manifest del PWA-->
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/jpg" href="./img/brand-logos/favicon.png" />
     <title>Torino Cars | Mecánica Integral</title>
 </head>
+
 <body>
     <div class="navbar">
         <div class="logo-container">
-            <img class="logo-icon" src="./img/brand-logos/navbar-logo.png" alt="logo-navbar"/>
+            <img class="logo-icon" src="./img/brand-logos/navbar-logo.png" alt="logo-navbar" />
         </div>
         <button class="hamburger-menu" aria-label="Toggle navigation">
             <div></div>
@@ -41,7 +42,7 @@
                 <a class="scroll-link" href="#reviews">Reseñas</a>
             </li>
             <li class="btn-nav">
-                <a class="scroll-link" href="#contact">Contactos</a>
+                <a class="scroll-link" href="#contact">Contacto</a>
             </li>
             <li>
                 <a id="loginIcon" class="icon" href="./views/login.html">
@@ -50,199 +51,300 @@
             </li>
         </ul>
     </div>
-    
 
-<section id="home" class="home">
-    <div class="home-container">
-        <div class="home-logo">
-            <img src="./img/brand-logos/main-white-logo.png" alt="Logo"/>
-        </div>
-        <div class="home-title-container">
-            <h1 class="home-title">Mecánica Integral<br><span class="red-title">Especializada</span></h1>
-            <h2 class="home-subtitle">
-              En <span class="text-underline">Torino Cars</span>, nos dedicamos con pasión a tu vehículo.<br>Expertos en mecánica automotriz, garantizamos rendimiento y confiabilidad.
-              ¡Confía en nosotros para mantener <span class="text-underline">tu motor en óptimas condiciones</span> y tu viaje sin contratiempos!
-            </h2>
-            <div class="buttons-home-container">
-              <a href="./views/login.html">
-                <button class="reserve-button">
-                  Reserva un turno
-                  <span class="material-symbols-outlined  arrow-icon">arrow_forward_ios</span>
-                </button>
-              </a>
-              <br>
-              <a href="https://chat.whatsapp.com/DYIxs3dD9INKc5hILnQxDa"  target="_blank">
-                <button class="contact-button">
-                  Contactanos
-                  <span class="material-symbols-outlined      arrow-icon">arrow_forward_ios</span>
-                </button>
-              </a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="slide-brands-bar">
-  <div class="images-container">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/fiat.png" alt="Fiat">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/ford.png" alt="Ford">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/honda.png" alt="Honda">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/jaguar.png" alt="Jaguar">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/jeep.png" alt="Jeep">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/kia.png" alt="Kia">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/Mazda.png" alt="Mazda">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/mercedes-benz.png" alt="Mercedes-benz">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/mini-cooper.png" alt="Mini-cooper">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/nissan.png" alt="Nissan">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/porsche.png" alt="Porsche">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/renault.png" alt="Renault">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/seat.png" alt="Seat">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/suzuki.png" alt="Suzuki">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/toyota.png" alt="Toyota">
-    <img class="images-car-brands-sizes" src="./img/cars-brands-logos/volkswagen.png" alt="Volkwagen">
-  </div>
-</section>
 
-<section id="about">
-    <div class="divisor"></div>
-    <div class="about">
-        <h1 id="niues" class="seccion-title">Nuestra historia</h1>
-        <p class="seccion-p">
-            Mas que un taller mecánico; somos una tradición familiar arraigada en el corazón de Buenos Aires
-            desde hace mas de 80 años. Nuestra historia se remonta a Don Alberto, un visionario cuya pasión por los
-            automóviles lo llevó a convertir la modesta cochera de su casa en el taller mecánico de renombre que somos
-            hoy en día.
-        </p>
-        <p class="seccion-p">
-            La historia de nuestro taller es una saga de dedicación y compromiso. Desde los modestos comienzos de Don
-            Alberto,
-            hasta la actualidad, hemos crecido y prosperado, expandiendo nuestro legado a los largo y ancho de la
-            ciudad.
-        </p>
-        <p class="seccion-p">
-            Lo que comenzó ccomo un modesto taller, se ha convertido en una red de 12 sucursales, estratégicamente
-            ubicadas en todo Buenos Aires. Cada una de estas sucursales es un testimonio vivo de nuestra pasión por el
-            servicio excepcional y la calidad inigualable en cada reparación.
-        </p>
-        <p class="seccion-p">
-            Nuestra trayectorio no solo se basa en la experiencia técnica, si no tambien en los valores que nos han
-            guiado a lo largo de los años.
-        <p>
-
-        <h1 class="seccion-title">Profesionales</h1>
-        <p class="seccion-p">Nuestros mecánicos son profesionales sumamente capacitados en mecánica integral
-            automotor.</p>
-
-        <div class="card-container">
-
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico1.JPG" alt="Placeholder Image"/>
+    <section id="home" class="home">
+        <div class="home-container">
+            <div class="home-logo">
+                <img src="./img/brand-logos/main-white-logo.png" alt="Logo" />
             </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico2.jpg" alt="Placeholder Image"/>
-            </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanica3.jpeg" alt="Placeholder Image"/>
-            </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico4.JPG" alt="Placeholder Image"/>
-            </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico5.JPG" alt="Placeholder Image"/>
-            </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico6.JPG" alt="Placeholder Image"/>
-            </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico7.JPG" alt="Placeholder Image"/>
-            </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico8.JPG" alt="Placeholder Image"/>
-            </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico9.JPG" alt="Placeholder Image"/>
-            </div>
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/mecanicos/mecanico10.JPG" alt="Placeholder Image"/>
-            </div>
-        </div>
-
-        <h1 id="titulo" class="seccion-title">Equipo de Desarrollo</h1>
-        <p id="subtitulo" class="seccion-p">
-            Conoce a nuestro equipo de desarrolladores.
-        </p>
-        <div class="card-container">
-            <div class="card card-1" data-cambios-realizados="false">
-                <img src="./img/compa0.png" alt="Placeholder Image"/>
-                <div class="overlay">
-                    <div class="overlay-text">
-                        <span>Franco Luca Parera</span>
-                        <br/>Lider de proyecto, <br/>Desarrollador Web, <br/>
-                        Frontend Dev.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-2" data-cambios-realizados="false">
-                <img class="img2" src="./img/compa2.jpg" alt="Placeholder Image"/>
-                <div class="overlay">
-                    <div class="overlay-text">
-                        <span>Gisela Emilce Serapio</span>
-                        <br/>Desarrolladora Creativa, <br/>..., <br/>
-                        ....
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-3" data-cambios-realizados="false">
-                <img class="img3" src="./img/compa3.JPG" alt="Placeholder Image"/>
-                <div class="overlay">
-                    <div class="overlay-text">
-                        <span>Noelia Deborah López</span>
-                        <br/>Mediadora, <br/>Community Manager, <br/>Relaciones Públicas
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-4" data-cambios-realizados="false">
-                <img class="img4" src="./img/compa1.jpg" alt="Placeholder Image"/>
-                <div class="overlay">
-                    <div class="overlay-text">
-                        <span>Thomas Ezequiel Adduci</span>
-                        <br/>Impulsor del proyecto, <br/>Desarrollador, <br/>Manager
-                    </div>
+            <div class="home-title-container">
+                <h1 class="home-title">Mecánica Integral<br><span class="red-title">Especializada</span></h1>
+                <h2 class="home-subtitle">
+                    En <span class="text-underline">Torino Cars</span>, nos dedicamos con pasión a tu
+                    vehículo.<br>Expertos en mecánica automotriz, garantizamos rendimiento y confiabilidad.
+                    ¡Confía en nosotros para mantener <span class="text-underline">tu motor en óptimas
+                        condiciones</span> y tu viaje sin contratiempos!
+                </h2>
+                <div class="buttons-home-container">
+                    <a href="./views/login.html">
+                        <button class="reserve-button">
+                            Reserva un turno
+                            <span class="material-symbols-outlined  arrow-icon">arrow_forward_ios</span>
+                        </button>
+                    </a>
+                    <br>
+                    <a href="https://chat.whatsapp.com/DYIxs3dD9INKc5hILnQxDa" target="_blank">
+                        <button class="contact-button">
+                            Contactanos
+                            <span class="material-symbols-outlined      arrow-icon">arrow_forward_ios</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-            <!--        </div>-->
-            <!-- <div class="mecanicos">
-               <button id="toggleButton" class="btn-mecanicos" onclick="cambiarContenido()">Mecanicos</button>
-             </div>-->
+    </section>
+    <section class="slide-brands-bar">
+        <div class="images-container">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/fiat.png" alt="Fiat">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/ford.png" alt="Ford">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/honda.png" alt="Honda">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/jaguar.png" alt="Jaguar">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/jeep.png" alt="Jeep">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/kia.png" alt="Kia">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/Mazda.png" alt="Mazda">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/mercedes-benz.png" alt="Mercedes-benz">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/mini-cooper.png" alt="Mini-cooper">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/nissan.png" alt="Nissan">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/porsche.png" alt="Porsche">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/renault.png" alt="Renault">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/seat.png" alt="Seat">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/suzuki.png" alt="Suzuki">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/toyota.png" alt="Toyota">
+            <img class="images-car-brands-sizes" src="./img/cars-brands-logos/volkswagen.png" alt="Volkwagen">
+        </div>
+    </section>
 
-            <!--      </div>-->
-<section id="service" class="service">
-                <div class="container">
-                    <div class="title-container">
-                        <h1 class="seccion-title">Servicios</h1>
-                        <p id="subtitulo-servicios" class="seccion-p">Conoce los servicios que brindamos.</p>
-                        <div class="container">
-                            <div class="content">
-                                <div class="buttons-container">
-                                    <button class="service-button">Mecánica general</button>
-                                    <button class="service-button">Mecánica especializada</button>
-                                    <button class="service-button">Mantenimiento preventivo</i></button>
-                                    <button class="service-button">Electricidad vehicular</button>
-                                    <button class="service-button">Chapa y pintura</button>
-                                    <button class="service-button">Cerrajería</button>
+    <section id="about">
+        <div class="divisor"></div>
+        <div class="about">
+            <h1 id="niues" class="seccion-title">Nuestra historia</h1>
+            <p class="seccion-p">
+                Mas que un taller mecánico; somos una tradición familiar arraigada en el corazón de Buenos Aires
+                desde hace mas de 80 años. Nuestra historia se remonta a Don Alberto, un visionario cuya pasión por los
+                automóviles lo llevó a convertir la modesta cochera de su casa en el taller mecánico de renombre que
+                somos
+                hoy en día.
+            </p>
+            <p class="seccion-p">
+                La historia de nuestro taller es una saga de dedicación y compromiso. Desde los modestos comienzos de
+                Don
+                Alberto,
+                hasta la actualidad, hemos crecido y prosperado, expandiendo nuestro legado a los largo y ancho de la
+                ciudad.
+            </p>
+            <p class="seccion-p">
+                Lo que comenzó ccomo un modesto taller, se ha convertido en una red de 12 sucursales, estratégicamente
+                ubicadas en todo Buenos Aires. Cada una de estas sucursales es un testimonio vivo de nuestra pasión por
+                el
+                servicio excepcional y la calidad inigualable en cada reparación.
+            </p>
+            <p class="seccion-p">
+                Nuestra trayectorio no solo se basa en la experiencia técnica, si no tambien en los valores que nos han
+                guiado a lo largo de los años.
+            <p>
 
-                                </div>
-                            </div>
+            <h1 class="seccion-title">Profesionales</h1>
+            <p class="seccion-p">Nuestros mecánicos son profesionales sumamente capacitados en mecánica integral
+                automotor.</p>
+
+            <div class="card-container">
+
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico1.JPG" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico2.jpg" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanica3.jpeg" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico4.JPG" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico5.JPG" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico6.JPG" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico7.JPG" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico8.JPG" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico9.JPG" alt="Placeholder Image" />
+                </div>
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/mecanicos/mecanico10.JPG" alt="Placeholder Image" />
+                </div>
+            </div>
+
+            <h1 id="titulo" class="seccion-title">Equipo de Desarrollo</h1>
+            <p id="subtitulo" class="seccion-p">
+                Conoce a nuestro equipo de desarrolladores.
+            </p>
+            <div class="card-container">
+                <div class="card card-1" data-cambios-realizados="false">
+                    <img src="./img/compa0.png" alt="Placeholder Image" />
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <span>Franco Luca Parera</span>
+                            <br />Lider de proyecto, <br />Desarrollador Web, <br />
+                            Frontend Dev.
                         </div>
                     </div>
                 </div>
-</section>
 
+                <div class="card card-2" data-cambios-realizados="false">
+                    <img class="img2" src="./img/compa2.jpg" alt="Placeholder Image" />
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <span>Gisela Emilce Serapio</span>
+                            <br />Desarrolladora Creativa, <br />..., <br />
+                            ....
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-3" data-cambios-realizados="false">
+                    <img class="img3" src="./img/compa3.JPG" alt="Placeholder Image" />
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <span>Noelia Deborah López</span>
+                            <br />Mediadora, <br />Community Manager, <br />Relaciones Públicas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-4" data-cambios-realizados="false">
+                    <img class="img4" src="./img/compa1.jpg" alt="Placeholder Image" />
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <span>Thomas Ezequiel Adduci</span>
+                            <br />Impulsor del proyecto, <br />Desarrollador, <br />Manager
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="service" class="service">
+
+        <div class="container" <div class="title-container">
+
+            <h1 class="seccion-title">Servicios</h1>
+
+            <p id="subtitulo-servicios" class="seccion-p">Conoce los servicios que brindamos.</p>
+            <div class="container">
+                <div class="content">
+                    <div class="buttons-container">
+                        <button class="service-button" data-hover-text="Servicios de mecánica general.">Mecánica
+                            general</button>
+                        <button class="service-button">Mecánica especializada</button>
+                        <button class="service-button">Mantenimiento preventivo</i></button>
+                        <button class="service-button">Electricidad vehicular</button>
+                        <button class="service-button">Chapa y pintura</button>
+                        <button class="service-button">Cerrajería</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="reviews">
+        <h1>fsdg</h1>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="review">
+                        <img src="./img/compa1.jpg" alt="Foto 1">
+                        <div class="review-content">
+                            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500...
+                            </p>
+                            <p><strong>4.5/5</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="review">
+                        <img src="./img/compa2.jpg" alt="Foto 2">
+                        <div class="review-content">
+                            <p>Excelente servicio y calidad de trabajo. Muy recomendable para cualquier proyecto de
+                                impresión...</p>
+                            <p><strong>5/5</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agrega más elementos de carrusel aquí -->
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <footer class="footer-background">
+            <div class="footer-top">
+                <div class="footer-logo-container">
+                    <img src="/img/brand-logos/main-white-logo.png" alt="Logo" class="footer-logo">
+                    <div class="social-media-logos">
+                        <a href="#" class="border-icon-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="border-icon-instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <div class="title-icon">
+                        <i class="bi bi-pin-angle-fill"></i>
+                        <h3 class="footer-title">Mapa del Sitio</h3>
+                    </div>
+
+                    <a href="#" class="footer-subtitle-navigate">Inicio</a>
+                    <a href="#" class="footer-subtitle-navigate">Nosotros</a>
+                    <a href="#" class="footer-subtitle-navigate">Servicios</a>
+                    <a href="#" class="footer-subtitle-navigate">Reseñas</a>
+
+                </div>
+                <div class="footer-section" id="legal">
+                    <div class="title-icon">
+                        <i class="bi bi-globe" id="ico"></i>
+                        <h3 class="footer-title">Legales</h3>
+                    </div>
+                    <ul class="footer-legal-list">
+                        <li><a href="#" class="footer-subtitle" id="legaltitle">Política de privacidad</a></li>
+                        <li><a href="#" class="footer-subtitle" id="legaltitle">Términos y condiciones</a></li>
+                        <li><a href="#" class="footer-subtitle" id="legaltitle">Botón de arrepentimiento</a></li>
+                        <li><a href="#" class="footer-subtitle" id="legaltitle">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <div class="title-icon">
+                        <i class="bi bi-telephone-fill"></i>
+                        <h3 class="footer-title">Teléfonos & Emails</h3>
+                    </div>
+                    <p class="footer-subtitle">(011) 2233-4455 - sedecaba@torinoscar.com</p>
+                    <p class="footer-subtitle">(011) 3344-5566 - sedelanus@torinoscar.com</p>
+                    <p class="footer-subtitle">(011) 4455-6677 - sedehaedo@torinoscar.com</p>
+                    <p class="footer-subtitle">(011) 5566-7788 - sedetapiales@torinoscar.com</p>
+                </div>
+                <div class="footer-section">
+                    <div class="title-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <h3 class="footer-title">Direcciones</h3>
+                    </div>
+                    <p class="footer-subtitle">Av. Cobo 601, Parque Chacabuco, CABA</p>
+                    <p class="footer-subtitle">Av. Hipólito Yrigoyen 2715, Lanús, Prov. de Buenos Aires</p>
+                    <p class="footer-subtitle">Av. Presidente Perón 1929, Haedo, Prov. de Buenos Aires</p>
+                    <p class="footer-subtitle">Av. Boulogne Sur Mer 999, Tapiales, Prov. de Buenos Aires</p>
+                </div>
+            </div>
+        </footer>
+        <button onclick="topFunction()" id="ArrowUpBtn"><i class="fas fa-arrow-up"></i></button>
+
+
+    </section>
 </body>
 <script src="./js/script.js"></script>
+
 </html>
