@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navMenu = document.querySelector('.navbar ul');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+  });
+});
+
 const datosOriginales = [
     {
       imgSrc: "./img/compa0.jpg",

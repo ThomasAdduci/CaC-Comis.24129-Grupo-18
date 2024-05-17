@@ -18,33 +18,39 @@
     <title>Torino Cars | Mecánica Integral</title>
 </head>
 <body>
-<div class="navbar">
-    <div class="logo-container">
-        <img class="logo-icon" src="./img/brand-logos/navbar-logo.png" alt="logo-navbar"/>
+    <div class="navbar">
+        <div class="logo-container">
+            <img class="logo-icon" src="./img/brand-logos/navbar-logo.png" alt="logo-navbar"/>
+        </div>
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <ul class="list-nav">
+            <li class="btn-nav">
+                <a class="scroll-link" href="#home">Inicio</a>
+            </li>
+            <li class="btn-nav">
+                <a class="scroll-link" href="#about">Nosotros</a>
+            </li>
+            <li class="btn-nav">
+                <a class="scroll-link" href="#service">Servicios</a>
+            </li>
+            <li class="btn-nav">
+                <a class="scroll-link" href="#reviews">Reseñas</a>
+            </li>
+            <li class="btn-nav">
+                <a class="scroll-link" href="#contact">Contactos</a>
+            </li>
+            <li>
+                <a id="loginIcon" class="icon" href="./views/login.html">
+                    <i class="fas fa-sign-in-alt fa-2x"></i>
+                </a>
+            </li>
+        </ul>
     </div>
-    <ul class="list-nav">
-        <li class="btn-nav">
-            <a class="scroll-link" href="#home">Inicio</a>
-        </li>
-        <li class="btn-nav">
-            <a class="scroll-link" href="#about">Nosotros</a>
-        </li>
-        <li class="btn-nav">
-            <a class="scroll-link" href="#service">Servicios</a>
-        </li>
-        <li class="btn-nav">
-            <a class="scroll-link" href="#reviews">Reseñas</a>
-        </li>
-        <li class="btn-nav">
-            <a class="scroll-link" href="#contact">Contactos</a>
-        </li>
-        <li>
-            <a id="loginIcon" class="icon" href="./views/login.ejs">
-                <i class="fas fa-sign-in-alt fa-2x"></i>
-            </a>
-        </li>
-    </ul>
-</div>
+    
 
 <section id="home" class="home">
     <div class="home-container">
@@ -101,8 +107,8 @@
     <div class="about">
         <h1 id="niues" class="seccion-title">Nuestra historia</h1>
         <p class="seccion-p">
-            Somos mas que un taller mecánico; somos una tradición familiar arraigada en el corazón de Buenos Aires
-            desde hace mas de 150 años. Nuestra historia se remonta a Don Alberto, un visionario cuta pasión por los
+            Mas que un taller mecánico; somos una tradición familiar arraigada en el corazón de Buenos Aires
+            desde hace mas de 80 años. Nuestra historia se remonta a Don Alberto, un visionario cuya pasión por los
             automóviles lo llevó a convertir la modesta cochera de su casa en el taller mecánico de renombre que somos
             hoy en día.
         </p>
@@ -166,7 +172,7 @@
         </p>
         <div class="card-container">
             <div class="card card-1" data-cambios-realizados="false">
-                <img src="./img/compa0.jpg" alt="Placeholder Image"/>
+                <img src="./img/compa0.png" alt="Placeholder Image"/>
                 <div class="overlay">
                     <div class="overlay-text">
                         <span>Franco Luca Parera</span>

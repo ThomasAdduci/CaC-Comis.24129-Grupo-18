@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleForm.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    crossorigin="anonymous"
+  />
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+       <a href="./taller.html" class="back-to-inicio">
+        <i class="fas fa-arrow-left"></i> Volver a inicio
+    </a> 
+        <h2>Agendar Turno</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="localidad" name="localidad" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo-vehiculo">Tipo de Vehículo:</label>
+                <select id="tipo-vehiculo" name="tipo-vehiculo" required>
+                    <option value="automovil">Automóvil</option>
+                    <option value="camioneta">Camioneta</option>
+                    <option value="moto">Moto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
+            </div>
+            <div class="form-group">
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+            </div>
+            <div class="form-group">
+                <label for="anio">Año del Vehículo:</label>
+                <input type="number" id="anio" name="anio" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo-problema">Tipo de Problema:</label>
+                <select id="tipo-problema" name="tipo-problema" required>
+                    <option value="motor">Problema de Motor</option>
+                    <option value="transmision">Problema de Transmisión</option>
+                    <option value="frenos">Problema de Frenos</option>
+                    <option value="electrico">Problema Eléctrico</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción del Problema:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fecha-turno">Fecha de Turno Disponible:</label>
+                <input type="date" id="fecha-turno" name="fecha-turno" required>
+            </div>
+            <div class="form-group">
+                <label for="hora-turno">Horarios Disponibles:</label>
+                <input type="time" id="hora-turno" name="hora-turno" required>
+            </div>
+            <button type="submit">Agendar Turno</button>
+        </form>
+    </div>
+</body>
+</html>
