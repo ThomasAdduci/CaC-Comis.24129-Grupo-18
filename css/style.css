@@ -103,6 +103,89 @@ body {
 }
 
 /*QUERYS*/
+/* Estilos básicos del menú hamburguesa */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 101; /* Para estar por encima del navbar */
+}
+
+.hamburger-menu div {
+  width: 2.5rem;
+  height: 0.25rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* Animación de los elementos del menú hamburguesa */
+.hamburger-menu.active div:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.active div:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.hamburger-menu.active div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* Estilos para el menú desplegable */
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2vw;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar ul.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: var(--navbar-height);
+  left: 0;
+  width: 100%;
+  background-color: rgba(32, 32, 32, 0.9);
+  padding: 1rem 0;
+}
+
+.navbar ul.active li {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Mostrar menú hamburguesa en tablet y mobile */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+    margin-right: 2vh;
+  }
+
+  .navbar ul {
+      display: none;
+  }
+
+  .navbar ul.active {
+      display: flex;
+  }
+  
+}
 
 /*FIN NAVBAR*/
 
@@ -126,7 +209,7 @@ body {
 
 .home-logo {
   flex: 0 0 auto;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .home-title-container {
@@ -298,6 +381,120 @@ body {
   background-color: rgba(8, 9, 19, 0.69);
 }
 
+/*QUERY*/
+
+/* Media query para tablets */
+@media (max-width: 1024px) {
+  .home-title {
+    font-size: 60px;
+  }
+
+  .home-subtitle {
+    font-size: 20px;
+  }
+
+  .reserve-button,
+  .contact-button {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 7vw;
+  }
+
+  .slogan {
+    font-size: 4vw;
+  }
+
+  .btn {
+    padding: 1.5vw 6vw;
+    font-size: 2.5vw;
+  }
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2%;
+  }
+
+  .home-logo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .home-title-container {
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 40px;
+  }
+
+  .home-subtitle {
+    font-size: 18px;
+  }
+
+  .buttons-home-container {
+    margin-top: 15px;
+  }
+
+  .reserve-button,
+  .contact-button {
+    width: 160px;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 9vw;
+  }
+
+  .slogan {
+    font-size: 5vw;
+  }
+
+  .btn {
+    padding: 2vw 5vw;
+    font-size: 3vw;
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 30px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+
+  .reserve-button,
+  .contact-button {
+    width: 140px;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 11vw;
+  }
+
+  .slogan {
+    font-size: 6vw;
+  }
+
+  .btn {
+    padding: 3vw 4vw;
+    font-size: 4vw;
+  }
+}
+
 /*FIN HOME*/
 
 /*About*/
@@ -358,7 +555,7 @@ body {
 }
 
 .seccion-title{
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #f0f0f0;
@@ -494,7 +691,7 @@ position: relative;
   height: 150px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #b90e0e;
+  background-color: #c03c3c;
   color: white;
   border: none;
   border-radius: 5px;
@@ -502,5 +699,19 @@ position: relative;
 }
 
 .service-button:hover {
-  background-color: #00000019;
+  background-color: #9437376e;
+}
+
+@media (max-width: 768px) {
+  .buttons-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .buttons-container {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los botones más pequeño */
+    padding: 20px; /* Padding más pequeño */
+  }
 }
