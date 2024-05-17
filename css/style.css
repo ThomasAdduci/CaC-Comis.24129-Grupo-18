@@ -209,7 +209,6 @@ body {
 
 .home-logo {
   flex: 0 0 auto;
-  margin-right: 10px;
 }
 
 .home-title-container {
@@ -382,15 +381,40 @@ body {
 }
 
 /*QUERY*/
-
-/* Media query para tablets */
-@media (max-width: 1024px) {
+/* Media query para monitores más pequeños */
+@media (max-width: 1500px) {
   .home-title {
     font-size: 60px;
   }
 
   .home-subtitle {
     font-size: 20px;
+  }
+
+  .home-logo {
+    width: 480px;
+  }
+
+  .reserve-button,
+  .contact-button {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Media query para tablets */
+@media (max-width: 1024px) {
+  .home-title {
+    font-size: 40px;
+  }
+
+  .home-subtitle {
+    font-size: 20px;
+  }
+
+  .home-logo {
+    width: 300px;
   }
 
   .reserve-button,
