@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger-menu');
   const navMenu = document.querySelector('.navbar ul');
@@ -152,3 +153,68 @@ const datosOriginales = [
     imagesContainer.appendChild(clone);
   });
   
+
+  //flecha hacia arriba
+  
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  const scrollUpBtn = document.getElementById("ArrowUpBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollUpBtn.style.display = "block";
+  } else {
+    scrollUpBtn.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+
+//Carrousel
+let currentIndex = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-item');
+    if (index >= slides.length) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = slides.length - 1;
+    } else {
+        currentIndex = index;
+    }
+    const offset = -currentIndex * 100;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+
+
+//PWA
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registrado con éxito:', registration);
+      })
+      .catch(error => {
+        console.log('Fallo en el registro del Service Worker:', error);
+      });
+  });
+}
