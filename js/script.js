@@ -28,7 +28,7 @@ const datosOriginales = [
     {
       imgSrc: "./img/compa1.jpg",
       nombre: "Thomas Ezequiel Adduci",
-      contenido: "Impulsor del proyecto, ..., ....",
+      contenido: "Impulsor del proyecto, Desarrollador, CTO",
     },
   ];
   
