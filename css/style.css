@@ -780,7 +780,11 @@ body {
 }
 .title-review h1{
   text-align: center;
-  font-size: 20px;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #f0f0f0;
+  text-decoration: underline;
 }
 .carousel {
   position: relative;
@@ -823,6 +827,18 @@ body {
 }
 
 
+@media (max-width: 768px) {
+
+  .title-review h1{
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+
+  .title-review h1{
+    font-size: 20px;
+  }
+}
 
 
 /* Seccion del footer */
