@@ -780,7 +780,11 @@ body {
 }
 .title-review h1{
   text-align: center;
-  font-size: 20px;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #f0f0f0;
+  text-decoration: underline;
 }
 .carousel {
   position: relative;
