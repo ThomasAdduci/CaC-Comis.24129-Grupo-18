@@ -524,7 +524,7 @@ body {
 /*About*/
 #about{
   position: relative;
-  background-color: #1a1818;
+  background-color: #131313;
   height: auto;
 }
 
@@ -574,7 +574,7 @@ body {
 }
 
 .divisor{
-  background-color: #1a1818;
+  background-color: #131313;
   height: 5vh;
 }
 
@@ -592,7 +592,7 @@ body {
   margin: 20px auto;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  color: #ffffffa9;
+  color: #ffffffd0;
 }
 .card-container {
   display: flex;
@@ -682,7 +682,9 @@ body {
 
 /*Servicios*/
 #service {
-  background-color: #444448;
+ background-image: url(../img/fondo-service.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
   width: 100%;
   height: auto;
   background-size: cover;
