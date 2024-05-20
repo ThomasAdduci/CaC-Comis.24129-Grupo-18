@@ -842,6 +842,31 @@ body {
   }
 }
 
+/*maps*/
+#maps {
+  padding: 50px 0;
+}
+
+.location-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.map-responsive iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
 /* Seccion del footer */
 
