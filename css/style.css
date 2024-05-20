@@ -778,7 +778,7 @@ body {
 }
 /* Carrousel reseña */
 #reviews{
-  background-color: #444448;
+  background-color: #242424;
 }
 .title-review h1{
   text-align: center;
@@ -843,15 +843,17 @@ body {
 }
 
 /*maps*/
+
 #maps {
-  padding: 50px 0;
+width: 100%;
+  background-color: #242424;
 }
 
 .location-container {
   max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+
 }
+
 
 .map-responsive {
   overflow: hidden;
@@ -867,6 +869,9 @@ body {
   top: 0;
   width: 100%;
 }
+
+
+
 
 /* Seccion del footer */
 
